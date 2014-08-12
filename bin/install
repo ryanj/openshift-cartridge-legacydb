@@ -1,0 +1,4 @@
+#!/bin/bash -e
+
+client_result "LegacyDB connection strings have been added to your applicaiton environment."
+client_result ""

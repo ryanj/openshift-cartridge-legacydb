@@ -1,0 +1,2 @@
+# OpenShift LegacyDB example cartridge
+

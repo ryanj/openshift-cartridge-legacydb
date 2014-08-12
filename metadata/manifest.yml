@@ -1,0 +1,26 @@
+---
+Name: legacydb
+Cartridge-Short-Name: LEGACYDB
+Architecture: x86_64
+Display-Name: legacydb 1.0
+Description: configuration strings for a remote data service
+Version: '1.0'
+Versions:
+- '1.0'
+Cartridge-Version: 0.0.1
+Cartridge-Vendor: ryanj
+License: GPL
+Vendor: ryanj
+Categories:
+- external
+Website: https://github.com/ryanj/openshift-cartridge-legacydb
+Provides:
+- legacydb-1.0
+Scaling:
+  Min: 0
+  Max: 0
+Group-Overrides:
+- components:
+  - legacydb-1.0
+
+Source-Url: https://github.com/ryanj/openshift-cartridge-legacydb.git

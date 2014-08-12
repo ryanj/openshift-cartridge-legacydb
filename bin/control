@@ -1,0 +1,32 @@
+#!/bin/bash
+
+source $OPENSHIFT_CARTRIDGE_SDK_BASH
+
+function start() {
+}
+
+function stop() {
+}
+
+function restart() {
+}
+
+function status() {
+}
+
+function reload() {
+}
+
+function tidy() {
+  echo "Nothing to clean"
+}
+
+case "$1" in
+  start) start ;;
+  stop) stop ;;
+  restart) restart ;;
+  status) status ;;
+  reload) reload ;;
+  tidy) tidy ;;
+  *) exit 0
+esac
