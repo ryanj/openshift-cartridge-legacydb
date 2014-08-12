@@ -11,16 +11,37 @@ Cartridge-Version: 0.0.1
 Cartridge-Vendor: ryanj
 License: GPL
 Vendor: ryanj
+Cart-Data:
+- Key: LEGACYDB_PORT
+  Type: environment
+  Description: db port connection info
+- Key: LEGACYDB_HOST
+  Type: environment
+  Description: db host connection info
+- Key: LEGACYDB_USERNAME
+  Type: environment
+  Description: db username connection info
+- Key: LEGACYDB_PASSWORD
+  Type: environment
+  Description: db password connection info
+- Key: LEGACYDB_DEFAULT_DB
+  Type: environment
+  Description: default database
+- Key: LEGACYDB_URL
+  Type: environment
+  Description: db configuration url
 Categories:
-- external
+- embedded
+- plugin
 Website: https://github.com/ryanj/openshift-cartridge-legacydb
+Source-Url: https://github.com/ryanj/openshift-cartridge-legacydb.git
 Provides:
 - legacydb-1.0
+- legacydb
 Scaling:
-  Min: 0
-  Max: 0
+  Min: 1
+  Max: -1
 Group-Overrides:
 - components:
   - legacydb-1.0
-
-Source-Url: https://github.com/ryanj/openshift-cartridge-legacydb.git
+  - web_framework

@@ -1,2 +1,6 @@
-#!/bin/bash
+#!/bin/bash -e
 
+#source $OPENSHIFT_CARTRIDGE_SDK_BASH
+
+# Compose a DB connection url from the configuration strings in /env:
+echo "mysql://${LEGACYDB_USERNAME}:${LEGACYDB_PASSWORD}@${LEGACYDB_HOST}:${LEGACYDB_PORT}/${LEGACYDB_DEFAULT_DB}" > env/LEGACYDB_URL
